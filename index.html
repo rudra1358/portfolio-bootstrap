@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rudra Patel | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap 5.3.8 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <script src="https://kit.fontawesome.com/1443ff9e58.js"></script>
+
+  <!--
+    The only CSS in this file that isn't a Bootstrap class. Two jobs Bootstrap's
+    utilities genuinely can't do: load the two custom Google Fonts, and stop the
+    fixed navbar from covering section headings when a nav link is clicked.
+  -->
+  <style>
+    body { font-family: "Montserrat", sans-serif; }
+    h1, h2, h3, .navbar-brand { font-family: "Bebas Neue", sans-serif; letter-spacing: .5px; }
+    section { scroll-margin-top: 70px; }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Navbar: Bootstrap's collapse component replaces the old manual toggleMenu() JS -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Rudra Patel</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#journey">Journey</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="py-5" style="margin-top: 5.5rem;">
+    <div class="container">
+      <div class="card shadow border-0">
+        <div class="card-body p-4 p-md-5">
+          <div class="row align-items-center g-4">
+            <div class="col-12 col-md-4 text-center">
+              <div class="ratio ratio-1x1 mx-auto" style="max-width: 200px;">
+                <img
+                  src="profile.jpg"
+                  class="rounded-circle object-fit-cover border border-4 border-primary"
+                  alt="Rudra Patel"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-8 text-center text-md-start">
+              <h1 class="display-6 fw-bold mb-1">Patel Rudra Satishchandra</h1>
+              <p class="text-primary fs-4 fw-semibold mb-3">Computer Science Engineering Student</p>
+              <p class="lead mb-0">
+                Driven by curiosity and creativity, I'm constantly learning and building
+                projects that make a difference.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+              <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item"><strong>Name:</strong> Rudra Patel</li>
+                <li class="list-group-item"><strong>College:</strong> New LJIET</li>
+                <li class="list-group-item"><strong>Branch:</strong> Computer Science Engineering</li>
+              </ul>
+              <p class="mb-0">
+                Hello! I'm Rudra Patel, a Computer Science Engineering student with a strong
+                interest in technology and software development. I enjoy learning new concepts,
+                solving problems, and building projects that help me improve my technical skills.
+                My areas of interest include Python programming, web development, machine
+                learning, and data science. I am a quick learner who believes in continuous
+                improvement and hands-on experience. I am always eager to explore new
+                technologies and work on projects that challenge my creativity and logical
+                thinking. My goal is to grow as a skilled software engineer and contribute to
+                innovative and impactful solutions in the future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-3">
+        <div class="col">
+          <div class="card text-bg-primary h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+              <i class="fa-brands fa-python fa-lg mb-2"></i>
+              <span class="fw-semibold small">Python Programming</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-primary h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+              <i class="fa-brands fa-html5 fa-lg mb-2"></i>
+              <span class="fw-semibold small">HTML</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-primary h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+              <i class="fa-brands fa-css3-alt fa-lg mb-2"></i>
+              <span class="fw-semibold small">CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-primary h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+              <i class="fa-brands fa-js fa-lg mb-2"></i>
+              <span class="fw-semibold small">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-primary h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-database fa-lg mb-2"></i>
+              <span class="fw-semibold small">SQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-primary h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-brain fa-lg mb-2"></i>
+              <span class="fw-semibold small">Machine Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-primary h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-chart-line fa-lg mb-2"></i>
+              <span class="fw-semibold small">Data Science</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-primary h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-puzzle-piece fa-lg mb-2"></i>
+              <span class="fw-semibold small">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-primary h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+              <i class="fa-brands fa-git-alt fa-lg mb-2"></i>
+              <span class="fw-semibold small">Git &amp; GitHub</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-primary h-100 text-center shadow-sm">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-cubes fa-lg mb-2"></i>
+              <span class="fw-semibold small">OOP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey -->
+  <section id="journey" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">My Journey</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="card text-bg-primary shadow">
+            <div class="card-body p-4">
+              <p class="text-center mb-4">A short timeline of my learning journey.</p>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item bg-transparent text-white fs-6 py-3">Started Learning Python</li>
+                <li class="list-group-item bg-transparent text-white fs-6 py-3">Learned SQL and Data Analysis</li>
+                <li class="list-group-item bg-transparent text-white fs-6 py-3">Exploring Machine Learning</li>
+                <li class="list-group-item bg-transparent text-white fs-6 py-3">Building web applications</li>
+                <li class="list-group-item bg-transparent text-white fs-6 py-3">Preparing for software engineering roles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+          <div class="card shadow-sm border-0">
+            <div class="card-body p-4 text-center">
+              <p class="fs-5">
+                <i class="fa-solid fa-envelope text-primary me-2"></i>
+                <a class="text-decoration-none text-body" href="mailto:rudra300806@gmail.com">rudra300806@gmail.com</a>
+              </p>
+              <p class="fs-5">
+                <i class="fa-solid fa-phone text-primary me-2"></i>8799585873
+              </p>
+              <p class="fs-5">
+                <i class="fa-brands fa-github text-primary me-2"></i>
+                <a class="text-decoration-none text-body" href="https://github.com/rudra1358" target="_blank" rel="noopener">GitHub</a>
+              </p>
+              <p class="fs-5 mb-0">
+                <i class="fa-brands fa-linkedin text-primary me-2"></i>
+                <a class="text-decoration-none text-body" href="https://www.linkedin.com/in/rudra-patel-94b19525a" target="_blank" rel="noopener">LinkedIn</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>&copy; 2026 Rudra Patel</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
